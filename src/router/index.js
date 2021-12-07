@@ -12,10 +12,8 @@ import DataBindingList from '../views/DataBindingList'
 import RenderingVIf from '../views/RenderingVIf'
 import EventClick from '../views/EventClick'
 import Computed from '../views/Computed'
-
-function Watch () {
-
-}
+import Watch from '../views/Watch'
+import DataBindingList2 from '../views/DataBindingList2'
 
 const routes = [
   {
@@ -95,6 +93,11 @@ const routes = [
     path: '/watch',
     name: 'Watch',
     component: Watch
+  },
+  {
+    path: '/dataBindingList2',
+    name: 'DataBindingList2',
+    component: DataBindingList2
   }
 ]
 
