@@ -14,6 +14,12 @@ import EventClick from '../views/EventClick'
 import Computed from '../views/Computed'
 import Watch from '../views/Watch'
 import DataBindingList2 from '../views/DataBindingList2'
+import NestedComponent from '../views/NestedComponent'
+import ParentComponent from '../views/ParentComponent'
+import Calculator from '../views/Calculator'
+import CompositionAPI from '../views/CompositionAPI'
+import CompositionAPI2 from '../views/CompositionAPI2'
+import CompositionAPI3 from '../views/CompositionAPI3'
 
 const routes = [
   {
@@ -98,6 +104,36 @@ const routes = [
     path: '/dataBindingList2',
     name: 'DataBindingList2',
     component: DataBindingList2
+  },
+  {
+    path: '/nestedComponent',
+    name: 'NestedComponent',
+    component: NestedComponent
+  },
+  {
+    path: '/parentComponent',
+    name: 'ParentComponent',
+    component: ParentComponent
+  },
+  {
+    path: '/calculator',
+    name: 'Calculator',
+    component: Calculator
+  },
+  {
+    path: '/compositionAPI',
+    name: 'CompositionAPI',
+    component: CompositionAPI
+  },
+  {
+    path: '/compositionAPI2',
+    name: 'CompositionAPI2',
+    component: CompositionAPI2
+  },
+  {
+    path: '/compositionAPI3',
+    name: 'CompositionAPI3',
+    component: CompositionAPI3
   }
 ]
 

@@ -44,6 +44,9 @@
 </template>
 
 <script>
+/* eslint-disable */
+import axios from 'axios'
+
 export default {
   name: 'DataBinding',
   data () {
@@ -56,8 +59,17 @@ export default {
     this.getList()
   },
   methods: {
-    async getList () {
+/*    async getList () {
       this.productList = await this.$api('https://0f127b1d-26f4-49eb-b0e2-a5b2a7bcd8c3.mock.pstmn.io/list', 'get')
+        .then(response => {
+          console.log('?!' + response)
+        })
+    },*/
+    async getList() {
+      axios.get('https://0f127b1d-26f4-49eb-b0e2-a5b2a7bcd8c3.mock.pstmn.io/list')
+        .then((response) => {
+          this.productList = response.data
+      })
     }
   }
 }
